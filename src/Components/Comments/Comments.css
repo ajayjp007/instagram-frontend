@@ -1,0 +1,39 @@
+.comment-container {
+    width: 100%;
+    margin-top: -20px;
+    animation: slideDown 500ms ease-in-out;
+}
+
+.comments-line {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-weight: 600;
+}
+.comment-content-container{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+.comments-content {
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.delete-comment-icon{
+    cursor: pointer;
+    width: 20px;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
